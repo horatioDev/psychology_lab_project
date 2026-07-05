@@ -92,21 +92,21 @@ Fill in credentials from each service dashboard (see Free Tier Limits below).
 
 ### 3. Set up external services
 
-1. **MongoDB Atlas** — Create a free M0 cluster, add your IP to the allowlist, copy the connection string.
-2. **Clerk** — Create an app, enable Email + OAuth providers, copy publishable and secret keys.
-3. **Cloudinary** — Copy cloud name, API key, and API secret from the dashboard.
-4. **Resend** — Create an API key; use `onboarding@resend.dev` for testing.
-5. **PostHog** — Create a project, copy the project API key.
-6. **Sentry** — Create Node.js and React projects, copy DSNs for each.
-7. **Stripe** — Create products/prices for subscription and one-time, copy price IDs and secret key.
+1. **MongoDB Atlas** - Create a free M0 cluster, add your IP to the allowlist, copy the connection string.
+2. **Clerk** - Create an app, enable Email + OAuth providers, copy publishable and secret keys.
+3. **Cloudinary** - Copy cloud name, API key, and API secret from the dashboard.
+4. **Resend** - Create an API key; use `onboarding@resend.dev` for testing.
+5. **PostHog** - Create a project, copy the project API key.
+6. **Sentry** - Create Node.js and React projects, copy DSNs for each.
+7. **Stripe** - Create products/prices for subscription and one-time, copy price IDs and secret key.
 
 ### 4. Run development servers
 
 ```bash
-# Terminal 1 — backend (port 5000)
+# Terminal 1 - backend (port 5000)
 npm run dev:backend
 
-# Terminal 2 — frontend (port 5173)
+# Terminal 2 - frontend (port 5173)
 npm run dev:frontend
 ```
 

@@ -2,7 +2,7 @@ import { Sentry } from '../config/sentry.js';
 
 export default function SentryTestButton() {
   function triggerError() {
-    throw new Error('Sentry frontend test error — this is intentional');
+    throw new Error('Sentry frontend test error - this is intentional');
   }
 
   function captureMessage() {

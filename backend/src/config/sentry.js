@@ -5,7 +5,7 @@ import * as Sentry from '@sentry/node';
  */
 export function initSentry() {
   if (!process.env.SENTRY_DSN) {
-    console.warn('SENTRY_DSN not set — error tracking disabled');
+    console.warn('SENTRY_DSN not set - error tracking disabled');
     return;
   }
 

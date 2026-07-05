@@ -20,7 +20,7 @@ export default function Home() {
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
           MongoDB, Express, React, and Node.js with Clerk, Cloudinary, Resend,
-          PostHog, Sentry, and Stripe — all on free tiers.
+          PostHog, Sentry, and Stripe - all on free tiers.
         </p>
         <div className="mt-8 flex justify-center gap-4">
           <SignedOut>

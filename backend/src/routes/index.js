@@ -12,9 +12,9 @@ router.use('/upload', uploadRoutes);
 router.use('/email', emailRoutes);
 router.use('/stripe', stripeRoutes);
 
-/** Intentional test route — triggers a Sentry error when called. */
+/** Intentional test route - triggers a Sentry error when called. */
 router.get('/sentry-test', (_req, _res) => {
-  throw new Error('Sentry backend test error — this is intentional');
+  throw new Error('Sentry backend test error - this is intentional');
 });
 
 router.get('/sentry-capture', (_req, res) => {

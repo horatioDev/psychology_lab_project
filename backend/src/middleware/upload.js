@@ -17,7 +17,7 @@ const fileFilter = (_req, file, cb) => {
   }
 };
 
-/** In-memory upload — max 5MB per file (Cloudinary free tier has bandwidth limits). */
+/** In-memory upload - max 5MB per file (Cloudinary free tier has bandwidth limits). */
 export const upload = multer({
   storage,
   fileFilter,

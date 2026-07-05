@@ -15,7 +15,7 @@ export function welcomeEmailTemplate(name = 'there') {
           <li>Try Stripe checkout on the pricing page</li>
         </ul>
         <p style="color: #6b7280; font-size: 14px;">
-          — The MERN Starter Team
+          - The MERN Starter Team
         </p>
       </body>
     </html>

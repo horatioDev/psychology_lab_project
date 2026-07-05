@@ -16,7 +16,7 @@ export function usePageTracking() {
   }, [location.pathname]);
 }
 
-/** Track custom events — e.g. user_login on sign-in. */
+/** Track custom events - e.g. user_login on sign-in. */
 export function trackEvent(eventName, properties = {}) {
   if (!import.meta.env.VITE_POSTHOG_KEY) return;
   posthog.capture(eventName, properties);

@@ -18,7 +18,7 @@ export default function Dashboard() {
       await apiFetch('/sentry-capture');
       alert('Backend Sentry message sent');
     } catch {
-      alert('Backend Sentry test failed — check server logs');
+      alert('Backend Sentry test failed - check server logs');
     }
   }
 

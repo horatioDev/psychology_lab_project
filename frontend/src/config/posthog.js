@@ -8,7 +8,7 @@ export function initPostHog() {
   const host = import.meta.env.VITE_POSTHOG_HOST || 'https://us.i.posthog.com';
 
   if (!key) {
-    console.warn('VITE_POSTHOG_KEY not set — analytics disabled');
+    console.warn('VITE_POSTHOG_KEY not set - analytics disabled');
     return null;
   }
 

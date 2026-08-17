@@ -1,5 +1,5 @@
 {
-  "name": "mern-starter-frontend",
+  "name": "psychology-lab-frontend",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -11,7 +11,7 @@
   "dependencies": {
     "@clerk/clerk-react": "^5.21.0",
     "@sentry/react": "^8.45.0",
-    "mern-starter": "file:..",
+    "psychology-lab": "file:..",
     "posthog-js": "^1.194.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

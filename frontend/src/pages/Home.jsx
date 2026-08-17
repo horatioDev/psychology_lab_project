@@ -16,7 +16,7 @@ export default function Home() {
       <section className="mb-16 text-center">
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
           Production-Ready{' '}
-          <span className="text-brand-600">MERN Starter</span>
+          <span className="text-brand-600">Psychology Lab</span>
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
           MongoDB, Express, React, and Node.js with Clerk, Cloudinary, Resend,

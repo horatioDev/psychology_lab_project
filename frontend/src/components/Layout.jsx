@@ -12,7 +12,7 @@ export default function Layout({ children }) {
       <header className="border-b border-gray-200 bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
           <Link to="/" className="text-lg font-bold text-brand-600">
-            MERN Starter
+           Psychology Lab
           </Link>
 
           <nav className="flex items-center gap-6">
@@ -40,7 +40,7 @@ export default function Layout({ children }) {
       <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
 
       <footer className="border-t border-gray-200 py-6 text-center text-sm text-gray-500">
-        MERN Starter Kit - MongoDB, Express, React, Node.js
+        Psychology Lab Stack - MongoDB, Express, React, Node.js
       </footer>
     </div>
   );

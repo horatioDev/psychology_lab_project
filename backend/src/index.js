@@ -27,7 +27,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(clerkAuth);
 
 app.get('/', (_req, res) => {
-  res.json({ message: 'MERN Starter API', version: '1.0.0' });
+  res.json({ message: 'Psychology Lab API', version: '1.0.0' });
 });
 
 app.use('/api', apiRoutes);

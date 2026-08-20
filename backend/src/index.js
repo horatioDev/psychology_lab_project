@@ -8,6 +8,8 @@ import { clerkAuth } from './middleware/auth.js';
 import { notFoundHandler, errorHandler } from './middleware/errorHandler.js';
 import apiRoutes from './routes/index.js';
 
+import cloudinary from "./utils/cloudinary.js";
+
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -29,6 +31,39 @@ app.use(clerkAuth);
 
 app.get('/', (_req, res) => {
   res.json({ message: 'Psychology Lab API', version: '1.0.0' });
+});
+
+// Test route
+app.get("/api/test-cloudinary", async (_req, res) => {
+  try {
+    const config = cloudinary.config();
+
+    console.log("Cloudinary runtime config:", {
+      cloud_name: config.cloud_name,
+      api_key: config.api_key,
+      api_secret_exists: !!config.api_secret,
+    });
+
+    const result = await cloudinary.api.ping();
+
+    res.json({
+      success: true,
+      result,
+    });
+  } catch (error) {
+    console.error("Cloudinary test error:", {
+      message: error.message,
+      http_code: error.http_code,
+      name: error.name,
+    });
+
+    res.status(500).json({
+      success: false,
+      message: error.message,
+      http_code: error.http_code,
+      name: error.name,
+    });
+  }
 });
 
 app.use('/api', apiRoutes);

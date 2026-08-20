@@ -13,7 +13,7 @@ export async function uploadToCloudinary(buffer, options = {}) {
   return new Promise((resolve, reject) => {
     const stream = cloudinary.uploader.upload_stream(
       {
-        folder: 'psychology-lab',
+        folder: 'psychology-lab-uploads',
         resource_type: 'auto',
         ...options,
       },
